@@ -5,14 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && prisma generate",
     "start": "next start",
     "lint": "next lint",
     "db:start": "docker-compose up -d",
     "db:push": "npx prisma db push",
     "db:pull": "npx prisma db pull",
     "db:migrate": "npx prisma migrate dev",
-    "db:seed": "npx prisma db seed"
+    "db:seed": "npx prisma db seed",
+    "postinstall": "prisma generate"
   },
   "prisma": {
     "seed": "npx tsx prisma/seed.ts"
