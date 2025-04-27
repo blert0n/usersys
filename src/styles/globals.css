@@ -1,0 +1,67 @@
+:root {
+  --background: #fafafa;
+  --foreground: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fafafa;
+    --foreground: #ffffff;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html,
+body,
+#__next {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ant-menu-light.ant-menu-root.ant-menu-vertical {
+  border-inline-end: 1px solid #fafafa !important;
+}
+.ant-typography {
+  color: #6d6d6d;
+}
+
+@media screen and (max-width: 480px) {
+  .ant-space-item,
+  .fullWidth {
+    width: 100%;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}

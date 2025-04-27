@@ -1,0 +1,22 @@
+.container {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.baseline {
+  display: flex;
+  align-items: baseline;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+  .count {
+    width: 100%;
+  }
+}
